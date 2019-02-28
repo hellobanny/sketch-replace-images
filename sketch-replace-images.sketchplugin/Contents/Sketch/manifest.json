@@ -5,7 +5,7 @@
     {
       "script": "sketch-replace-images.js",
       "shortcut": "shift ctrl command r",
-      "name": "Sketch Replace Images",
+      "name": "Sketch Replace Images & Text",
       "identifier": "sketch-replace-images"
     },
     {
@@ -24,9 +24,9 @@
   },
   "version": "0.5.2",
   "description": "Sketch 45+ plugin to replace (as in update) existing images by name in a sketch document.",
-  "name": "Sketch Replace Images",
-  "identifier": "Sketch Replace Images",
+  "name": "Sketch Replace Images & Text",
+  "identifier": "Sketch Replace Images & Text",
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com/shakemno/sketch-replace-images/master/.appcast.xml",
-  "author": "shakemno"
+  "appcast": "https://raw.githubusercontent.com/hellobanny/sketch-replace-images/master/.appcast.xml",
+  "author": "hellobanny"
 }

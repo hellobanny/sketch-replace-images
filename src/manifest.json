@@ -5,7 +5,7 @@
     {
       "script" : "./sketch-replace-images.js",
       "shortcut" : "shift ctrl command r",
-      "name" : "Sketch Replace Images",
+      "name" : "Sketch Replace Images & Text",
       "identifier" : "sketch-replace-images"
     },
     {

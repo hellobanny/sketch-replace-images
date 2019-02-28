@@ -1,13 +1,13 @@
 {
-  "name": "sketch-replace-images",
+  "name": "sketch-replace-images-text",
   "version": "0.5.2",
   "license": "Apache-2.0",
   "description": "Sketch 45+ plugin to replace (as in update) existing images by name in a sketch document.",
-  "identifier": "de.shakemno.sketch-replace-images",
-  "author": "shakemno",
-  "authorEmail": "info@shakemno.de",
-  "bugs": "https://github.com/shakemno/sketch-replace-images/issues",
-  "contributors": "shakemno",
+  "identifier": "us.appby.sketch-replace-images-text",
+  "author": "hellobanny",
+  "authorEmail": "info@hellobanny.de",
+  "bugs": "https://github.com/hellobanny/sketch-replace-images/issues",
+  "contributors": "hellobanny",
   "keywords": [
     "sketch, plugin, replace images, replace"
   ],
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:shakemno/sketch-replace-images.git"
+    "url": "git@github.com:hellobanny/sketch-replace-images.git"
   },
   "skpm": {
-    "name": "Sketch Replace Images",
+    "name": "Sketch Replace Images & Text",
     "manifest": "src/manifest.json",
     "main": "sketch-replace-images.sketchplugin"
   },

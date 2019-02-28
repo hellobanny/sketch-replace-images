@@ -1,6 +1,29 @@
 const SketchReplaceImagesDefaults = require('./sketch-replace-images-defaults');
 
 export default function(context) {
+  //从剪贴板中替换文字，用/n进行断行
+  var pasteBoard = NSPasteboard.generalPasteboard();
+  // Turn a data in the string type
+  var titles = pasteBoard.stringForType(NSPasteboardTypeString);
+  //var titles = [pasteBoard stringForType:NSPasteboardTypeString];
+
+  var lines = String(titles).split('\n');
+
+  var documents = require('sketch/dom').Document.getDocuments();
+  //第一个打开的文件
+  var ddd = documents[0];
+  var layers = ddd.getLayersNamed('title'); 
+  console.log(layers.length);
+  if (layers.length) {
+      // do something
+      //sketch.UI.message(layers.length.to_s());
+      for (var i = 0; i < layers.length && i < lines.length; i++)
+      {
+        layers[i].text = lines[i];
+      }
+  }
+    
+  //替换图片
   var fileManager = NSFileManager.defaultManager();
   var doc = context.document;
   var doc_folder = doc.fileURL().toString().stringByDeletingLastPathComponent();
@@ -54,6 +77,7 @@ export default function(context) {
       images_available.setObject_forKey(filename, basefileName);
     }
   }
+  
 
   console.log("updating images...");
 

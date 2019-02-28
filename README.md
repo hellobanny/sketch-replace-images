@@ -5,6 +5,12 @@ A plugin to replace (as in update) existing images by name in a sketch document.
 Supported image types: ```png, jpg, jpeg```
 
 ---
+##使用方式
+1. 复制example下你需要的模板到任意位置。
+2. 将1.png ... 10.png 替换为你的截图。
+3. 将要替换的文案写好，一行一句，复制到剪贴板。
+4. 执行替换，图片和文字将会自动替换。
+5. 也可以通过选择不同的文件夹来进行操作。
 
 ## Usage
 
